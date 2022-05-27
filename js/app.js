@@ -51,6 +51,7 @@ for (let i = 0; i < cellsNumber; i++) {
 createGrid(10, 10);
 //importo il bottone per selezionare la difficoltà
 const btnDifficulty = document.getElementById("btnDifficulty");
+const btnDelete = document.getElementById("btnDelete");
 
 //creo un event listener sul bottone
 btnDifficulty.addEventListener("click", function () {
@@ -66,4 +67,8 @@ btnDifficulty.addEventListener("click", function () {
     } else if (difficulty === "hard") {
         createGrid(10, 10);
     }
+});
+
+btnDelete.addEventListener("click", function () {
+    gridContainer.innerHTML = "";
 });
