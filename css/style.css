@@ -1,0 +1,20 @@
+:root {
+    --cell-size: 50px;
+    --bs-primary: #7CFFD2;
+    --bs-primary-rgb: 124, 255, 210;
+    --bs-secondary: #6495F1;
+    --bs-secondary-rgb: 100, 149, 241;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container .cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
