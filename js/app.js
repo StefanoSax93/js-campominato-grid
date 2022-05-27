@@ -48,5 +48,22 @@ for (let i = 0; i < cellsNumber; i++) {
     gridContainer.append(cell);
 }
 }
-
 createGrid(10, 10);
+//importo il bottone per selezionare la difficoltà
+const btnDifficulty = document.getElementById("btnDifficulty");
+
+//creo un event listener sul bottone
+btnDifficulty.addEventListener("click", function () {
+    //creo le condizioni per la selezione della difficoltà
+    const difficulty = document.getElementById("selectDifficulty").value;
+    //ogni volta che clicko la tabella si deve aggiornare in base al valore selezionato
+    gridContainer.innerHTML = "";
+    //creo le condizioni
+    if (difficulty === "easy") {
+        createGrid(7, 7);
+    } else if (difficulty === "medium") {
+        createGrid(9, 9);
+    } else if (difficulty === "hard") {
+        createGrid(10, 10);
+    }
+});
