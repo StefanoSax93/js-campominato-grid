@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campo minato</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css' integrity='sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,13 +16,13 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <img src="img/Logo.png" alt="">
-                        <span class="h1 align-middle ms-2">Campo Minato</span>
+                        <span class="h1 align-middle ms-2 fw-bold">Campo Minato</span>
                     </div>    
                     <div>
-                        <select name="" id="">   
-                            <option value="">Facile</option>
-                            <option value="">Medio</option>
-                            <option value="">Difficile</option>
+                        <select name="difficulty" id="selectDifficulty">   
+                            <option value="easy">Facile</option>
+                            <option value="medium">Medio</option>
+                            <option value="hard">Difficile</option>
                         </select>
                         <button type="button" class="ms-2 px-3">Play</button>
                     </div>
@@ -40,7 +40,9 @@
     </main>
 
     <footer>
-
+        <div class="container pt-2">
+            <div>Made with &hearts; by <a href="">Boolean</a></div>
+        </div>
     </footer>
         
         
