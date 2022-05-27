@@ -18,3 +18,17 @@
     cursor: pointer;
     font-weight: bold;
 }
+.btn_board {
+    border: 1px solid black;
+    transition: all 0.4s;
+}
+.btn_board:hover {
+    background-color: #6495F1;
+    color: white;
+    transform: scale(1.2);
+}
+select {
+    width: 150px;
+    padding: 1.8px 0;
+    cursor: pointer;
+}
