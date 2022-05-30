@@ -40,7 +40,8 @@ for (let i = 0; i < cellsNumber; i++) {
     const numero = parseInt(this.innerText);
 
     if (numero) {
-        this.classList.add("bg-secondary","text-white");
+        this.classList.toggle("bg-secondary");
+        this.classList.toggle("text-white");
     } 
     
     });
